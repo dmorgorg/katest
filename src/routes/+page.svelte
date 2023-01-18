@@ -1,6 +1,6 @@
 <script>
 	import { onMount,afterUpdate } from 'svelte';
-	import '$lib/styles/styles.css';
+	// import '$lib/styles/styles.css';
     let katexify;
 
 	onMount(() => {
@@ -23,12 +23,12 @@
         katexify();
 	});
 
-	// afterUpdate(()=>{
-	// 	katexify();
-	// })
+	afterUpdate(()=>{
+		katexify();
+	})
 </script>
 
-$$a^2=b^2+c^2$$
+Hello !$a^2=b^2+c^2!$ World
 
 <svelte:head>
 	<link
